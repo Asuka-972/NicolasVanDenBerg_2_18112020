@@ -1,7 +1,608 @@
 /* CSS */
-
+/* Code All Page
+Contenant du code qui s'applique à toute la page
+*/
 *
 {
-    background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
+    margin:0;
+    padding:0;
+    
+}
+h3
+{
+    font-size: small;
+    padding: 10px 0 10px 10px;
+}
+p
+{
+    font-size: smaller;
+}
+
+header
+{
+    padding: 0 0 0 20px;
+    margin-left: 30px;
+}
+.main-page
+{
+    padding: 0 0 0 20px;
+    margin: 0 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#sub-page
+{
+    padding: 0 0 0 10px;
+    
+    margin: 20px 30px 30px 40px;
+}
+footer
+{
+    background-color: #F2F2F2;
+    width: auto;
+    height: 200px;
+    
+}
+
+figure
+{ 
+    transition: all .2s ease-in-out;
+}
+figure:hover 
+{ 
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* Header */
+/* first-header 
+contient la partie logo et nav*/
+
+/* partie nav */
+#first-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#fond-menu
+{
+    width: 50%;
+    height: 50px;
+    
+    
+    
+    
+}
+#menu-header
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0;
+    list-style: none;
+    
+    
+}
+#menu-header li
+{
+    width: 140px;
+   
+    
+    
+}
+
+
+#menu-header li a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+   
+}
+
+
+#menu-header li a
+{
+   
+    width: 120px;
+    padding: 30px 0px 0px 0px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    border-top: 2px solid #fff;
+    margin: 0 0 0 10px;
+    
+    
+    
+}
+#menu-header li:nth-child(3) a
+{
+    color: #0065FC;
+}
+
+/* partie logo */
+
+#logo
+{
+    width: 50%;
+    padding-top: 25px;
+
+   
+}
+#logo h1
+{
+    padding-top: 15px;
+    font-size: larger;
+}
+#logo p
+{
+    padding-top: 5px;
+    font-size: smaller;
+}
+
+/* partie recherche */
+
+.recherche
+{
+    padding-top: 15px;
+}
+.recherche p
+{
+    display: inline-block;
+}
+.recherche #search
+{
+    border: 1px solid #F2F2F2;
+    height: 37px;
+    margin-left: -5px;
+    
+    
+}
+.recherche button
+{
+    width: 100px;
+    height: 37px;
+    border: 1px solid #0065FC;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-left: -5px;
+    background-color: #0065FC;
+    color: #fff;
+    text-align: center;
+
+}
+.recherche #geo
+{
+    
+    width: 30px;
+    height: 25px;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    padding: 10px 0 0 0;
+    
+
+}
+.recherche #geo i
+{
+    margin: 0 0 0 10px;
+}
+
+
+/* partie filtre */
+
+.filtre
+{
+    margin-top: 30px;
+    display: flex;
+    
+}
+.filtre h2
+{
+    font-size: medium;
+    line-height: 2.5;
+
+}
+
+.filtre div:hover
+{
+    background-size: 100% 100%;
+}
+
+
+.filtre div
+{
+    
+    display: flex;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px;
+    
+
+    text-align: right;
+    line-height: 2.5;
+    padding: 0;
+    margin: 0 10px 0 10px;
+
+    background: linear-gradient(to right, #DEEBFF, #DEEBFF);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s 0s;
+}
+.filtre div:nth-child(2)
+{
+    width: 160px;
+    height: 40px;
+    margin-left: 20px;
+}
+.filtre div:nth-child(3)
+{
+    width: 130px;
+    height: 40px;
+}
+.filtre div:nth-child(4)
+{
+    width: 160px;
+    height: 40px;
+}
+.filtre div:nth-child(5)
+{
+    width: 210px;
+    height: 40px;
+}
+
+.filtre div p
+{
+    width: 40px;
+    height: auto;
+    padding: 0;
+    margin: 0px 20px 0px 0px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+}
+.filtre div p i
+{
+    padding: 13px 14px 13px 12px;
+    /*margin: 30% 30%;*/
+    color: #0065FC;
+}
+
+
+.filtre div a
+{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    padding: 0;
+
+}
+
+/* commentaire de filtre */
+.recherche #com-filtre
+{
+    display: flex;
+    margin: 40px 0px 60px 10px;
+}
+
+.recherche #com-filtre #ico-info
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #F2F2F2;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 50px;
+    
+}
+.recherche #com-filtre i
+{
+    color: #0065FC;
+    padding: 0;
+    margin: 0px 12px;
+    
+}
+.recherche #com-filtre p
+{
+    line-height: 2.5;
+    margin-left: 10px;
+    font-size: smaller;
+}
+
+/* PARTIE MAIN PAGE */
+
+/* PARTIE GENERALE  */
+
+
+
+.overlay-hebergement i
+{
+    padding: 5px 0 0 0;
+}
+.overlay-hebergement i:nth-child(3)
+{
+    padding-left: 10px;
+}
+
+.bleu
+{
+    color: #0065FC;
+}
+.grey
+{
+    color: #F2F2F2;
+}
+
+
+/* Hébergement à Marseille */
+
+#hebergement
+{
+    background-color: #F2F2F2;
+    padding: 60px 0 0 10px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+
+#hebergement h1
+{
+    font-size: larger;
+    margin: 0 0 30px 10px;
+}
+
+#hebergement .articles-hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#hebergement .articles-hebergements figure
+{
+    width: 240px;
+    height: 160px;
+    margin-bottom: 50px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    padding-bottom: 78px;
+    background-color: #fff;
+   
+}
+#hebergement .articles-hebergements figure img
+{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+    
+}
+
+#hebergement .articles-hebergements figure figcaption
+{
+    text-align: left;
+    
+}
+#hebergement .articles-hebergements figure figcaption p
+{
+    padding: 0 0 10px 10px;
+}
+#hebergement .articles-hebergements figure figcaption .first
+{
+    margin-left: 10px;
+}
+
+
+
+   
+
+#hebergement a
+{
+    
+    text-decoration: none;
+    color: black;
+    font-size: x-small;
+   
+}
+#hebergement a h2
+{
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+   
+}
+
+
+/* PARTIE ASIDE */
+
+aside
+{
+    background-color: #F2F2F2;
+    padding: 60px 0 0 20px;
+    width: 25%;
+    border-radius: 10px;
+   
+   
+    
+}
+#titre-aside
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+aside h1
+{
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+aside .aside-pop
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+}
+
+aside .aside-pop figure
+{
+    width: 260px;
+    height: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    
+    
+}
+aside .aside-pop figure img
+{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+aside .aside-pop figure figcaption p
+{
+    padding: 0 0 10px 10px;
+}
+aside .aside-pop figure figcaption .first
+{
+    margin-left: 10px;
+}
+
+
+
+/* PARTIE SUB-PAGE */
+/* ACTIVITES À MARSEILLE */
+
+
+#activites h1
+{
+    font-size: larger;
+    margin: 30px 0 30px 0;
+}
+
+
+#articles-activites
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    
+
+   
+
+
+.groupe-activite
+{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    
+}
+
+
+.groupe-activite .art-1
+{
+    width: 260px;
+    height: 350px;
+    margin: 0 20px 50px 0px;
+    padding-bottom: 20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    box-shadow:20px 20px 50px 50px #F2F2F2; 
+    
+}
+.groupe-activite .art-1 img
+{
+    width: 100%;
+    height: 94%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.groupe-activite .articles-orga #activ-1
+{
+    width: 260px;
+    height: 150px;
+    margin: 0 30px 46px 10px;
+    padding-bottom: 30px;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    box-shadow:20px 20px 50px 50px #F2F2F2; 
+}
+.groupe-activite .articles-orga #activ-2
+{
+    width: 260px;
+    height: 110px;
+    margin: 0 30px 50px 10px;
+    padding-bottom: 30px;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    box-shadow:20px 20px 50px 50px #F2F2F2; 
+}
+.groupe-activite .articles-orga .activ-3
+{
+    width: 260px;
+    height: 130px;
+    margin: 0 0 46px 10px;
+    padding-bottom: 30px;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    box-shadow:20px 20px 50px 50px #F2F2F2; 
+}
+.groupe-activite .articles-orga figure img
+{
+    width: 100%;
+    height: 94%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+
+
+
+
+  
+ /* PARTIE FOOTER */
+
+
+
+#nav-foot
+{
+    display: flex;
+}
+
+.menu-footer
+{
+    list-style: none;
+    color: black;
+    padding: 40px 200px 0 50px;
+}
+.menu-footer li h2
+{
+    font-size: medium;
+    padding-bottom: 10px;
+}
+.menu-footer li
+{
+    font-size: smaller;
+    padding-top: 10px;
 }

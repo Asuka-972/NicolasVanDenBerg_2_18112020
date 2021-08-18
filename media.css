@@ -1,0 +1,60 @@
+@media all and (min-width: 768px) and (max-width: 1024px)
+{
+    /* Vos règles CSS pour tablette ici*/
+
+
+    .main-page
+    {
+        flex-direction: column;
+    }
+    #hebergement
+    {
+        width: auto;
+    }
+    aside
+    {
+        width: auto;
+    }
+    aside .aside-pop
+    {
+        width: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
+@media all and (max-device-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici */
+
+    #first-header
+    {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    #logo
+    {
+        width: auto;
+        text-align: center;
+    }
+    #fond-menu
+    {
+        width: auto;
+    }
+    #menu-header
+    {
+        justify-content: center;
+    }
+    .recherche
+    {
+        width: auto;
+    }
+    .filtre
+    {
+        width: auto;
+    }
+}
